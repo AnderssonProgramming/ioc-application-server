@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroSpringBoot - IoC Application Server</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <h1>&#9889; MicroSpringBoot</h1>
+        <p class="subtitle">IoC Application Server &mdash; Powered by Java Reflection</p>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>&#128269; REST API Explorer</h2>
+            <p>Test the registered endpoints below:</p>
+
+            <div class="api-grid">
+                <div class="api-item">
+                    <h3>GET /</h3>
+                    <p>Root greeting</p>
+                    <button onclick="callApi('/')">Try it</button>
+                </div>
+                <div class="api-item">
+                    <h3>GET /hello</h3>
+                    <p>Hello World</p>
+                    <button onclick="callApi('/hello')">Try it</button>
+                </div>
+                <div class="api-item">
+                    <h3>GET /greeting</h3>
+                    <p>Personalized greeting</p>
+                    <div class="input-group">
+                        <input type="text" id="greetingName" placeholder="Enter name" value="Pedro">
+                        <button onclick="callApi('/greeting?name=' + document.getElementById('greetingName').value)">Try it</button>
+                    </div>
+                </div>
+                <div class="api-item">
+                    <h3>GET /pi</h3>
+                    <p>Value of Math.PI</p>
+                    <button onclick="callApi('/pi')">Try it</button>
+                </div>
+                <div class="api-item">
+                    <h3>GET /square</h3>
+                    <p>Square of a number</p>
+                    <div class="input-group">
+                        <input type="number" id="squareNum" placeholder="Number" value="7">
+                        <button onclick="callApi('/square?n=' + document.getElementById('squareNum').value)">Try it</button>
+                    </div>
+                </div>
+                <div class="api-item">
+                    <h3>GET /time</h3>
+                    <p>Current server time</p>
+                    <button onclick="callApi('/time')">Try it</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>&#128196; Response</h2>
+            <pre id="response">Click "Try it" on any endpoint to see the response here.</pre>
+        </section>
+
+        <section class="card">
+            <h2>&#128218; About</h2>
+            <p>This server demonstrates:</p>
+            <ul>
+                <li><strong>@RestController</strong> &mdash; Component annotation for automatic discovery</li>
+                <li><strong>@GetMapping</strong> &mdash; Maps GET requests to handler methods</li>
+                <li><strong>@RequestParam</strong> &mdash; Binds query parameters to method arguments</li>
+                <li><strong>IoC Container</strong> &mdash; Classpath scanning and dependency injection</li>
+                <li><strong>Java Reflection</strong> &mdash; Runtime method invocation and annotation processing</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>MicroSpringBoot &copy; 2026 &mdash; AREP Workshop | Escuela Colombiana de Ingenier&iacute;a Julio Garavito</p>
+    </footer>
+
+    <script src="/app.js"></script>
+</body>
+</html>

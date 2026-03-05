@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(135deg, #161b22, #1f2937);
+    border-bottom: 1px solid #30363d;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+}
+
+header .subtitle {
+    color: #8b949e;
+    font-size: 1.1rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.card h2 {
+    color: #58a6ff;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.api-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+}
+
+.api-item {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1rem;
+}
+
+.api-item h3 {
+    color: #7ee787;
+    font-family: 'Courier New', monospace;
+    margin-bottom: 0.5rem;
+}
+
+.api-item p {
+    color: #8b949e;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+button {
+    background: #238636;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 0.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    width: 120px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #58a6ff;
+}
+
+pre {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    padding: 1rem;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    color: #7ee787;
+    min-height: 60px;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #484f58;
+    border-top: 1px solid #21262d;
+    margin-top: 2rem;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .api-grid {
+        grid-template-columns: 1fr;
+    }
+}
