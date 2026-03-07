@@ -42,7 +42,7 @@ Before you start, make sure you have:
 |---------|-------|
 | **Name** | `microspringboot-server` |
 | **AMI** | Amazon Linux 2023 (or Ubuntu 22.04 LTS) |
-| **Instance type** | `t2.micro` (free tier eligible) |
+| **Instance type** | `t3.micro` (free tier eligible) |
 | **Key pair** | Select or create a key pair (download the `.pem` file) |
 | **Network** | Default VPC, public subnet, auto-assign public IP: **Enabled** |
 
@@ -156,7 +156,7 @@ sudo apt install git -y
 git --version
 ```
 
-> 📸 **Screenshot suggestion:** Take a screenshot showing `java -version` and `mvn -version` output → save as `images/aws_java_maven.png`
+> 📸 **Screenshot suggestion:** Take a screenshot showing `java -version`,`mvn -version` and `git -version` output → save as `images/aws_java_version.png`, `images/aws_maven_version.png` and `images/aws_git_version.png`
 
 ---
 
@@ -377,7 +377,7 @@ Take and add these screenshots to the `images/` directory:
 | EC2 Launch | `aws_ec2_launch.png` | EC2 instance creation page |
 | Security Group | `aws_security_group.png` | Inbound rules showing port 8080 |
 | SSH Connection | `aws_ssh_connect.png` | Terminal connected to EC2 |
-| Java + Maven | `aws_java_maven.png` | `java -version` and `mvn -version` output |
+| Java + Maven | `aws_java_version.png`,`aws_maven_version.png` and `aws_git_version.png` | `java -version`, `mvn -version` and `git --version` output |
 | Tests Passing | `aws_tests.png` | `mvn test` showing 124 tests pass |
 | Server Startup | `aws_server_startup.png` | MicroSpringBoot banner |
 | Browser - API | `aws_deployment.png` | API Explorer on EC2 public IP |

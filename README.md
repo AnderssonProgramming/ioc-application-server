@@ -53,8 +53,17 @@
 
 ### AWS Deployment
 
-![AWS EC2](images/aws_deployment.png)
-*Server running on an AWS EC2 instance accessible via public IP*
+![LAUNCH](images/aws_ec2_launch.png)
+![SECURITY GROUP](images/aws_security_group.png)
+![SSH CONNECT](images/aws_ssh_connect.png)
+![JAVA VERSION](images/aws_java_version.png)
+![MAVEN VERSION](images/aws_maven_version.png)
+![GIT VERSION](images/aws_git_version.png)
+![TESTS](images/aws_tests.png)
+![SERVER STARTUP](images/aws_server_startup.png)
+![DEPLOYMENT](images/aws_deployment.png)
+![GREETING](images/aws_greeting.png)
+*Server running on an AWS EC2 instance accessible via public IP with full step-to-step*
 
 ---
 
